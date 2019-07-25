@@ -1,6 +1,8 @@
 language: java
 sudo: false
 
+os:
+  - linux-ppc64le
 jdk: openjdk11
 script:
   - export JAVA_HOME=$HOME/openjdk11
