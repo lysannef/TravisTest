@@ -1,0 +1,9 @@
+language: java
+sudo: false
+
+jdk: openjdk11
+script:
+  - export JAVA_HOME=$HOME/openjdk11
+  - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --target $JAVA_HOME \
+    --url "wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11%2B28/OpenJDK11-jdk_ppc64le_linux_hotspot_11_28.tar.gz"
+  - # do stuff with open OpenJDK 11
