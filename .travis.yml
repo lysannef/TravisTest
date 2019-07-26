@@ -7,5 +7,5 @@ os:
     jdk: openjdk11
       script:
         - export JAVA_HOME=$HOME/openjdk11
-        - $TRAVIS_BUILD_DIR/install-jdk.sh --url "wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11%2B28/OpenJDK11-jdk_ppc64le_linux_hotspot_11_28.tar.gz" --target $JAVA_HOME 
+        - source install-jdk.sh --url "wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11%2B28/OpenJDK11-jdk_ppc64le_linux_hotspot_11_28.tar.gz" --target $JAVA_HOME 
 
